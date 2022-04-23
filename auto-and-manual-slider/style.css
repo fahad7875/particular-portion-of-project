@@ -1,0 +1,119 @@
+/*  ====﷽==== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f8ff;
+}
+
+.container {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: auto;
+  background-color: #234556;
+  text-align: center;
+  position: relative;
+}
+
+.slide-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid coral;
+  z-index: 1;
+}
+
+.slide {
+  position: relative;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide p {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 25px;
+  color: #f0f8ff;
+  z-index: 2;
+}
+
+.slide h3 {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: #fff;
+  text-transform: capitalize;
+  z-index: 2;
+}
+
+.slide img {
+  display: block;
+  width: 600px;
+  height: auto;
+  animation: slide-animation 2s ease-in-out;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #fff;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.dot-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.dot-indicator div {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: lightpink;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot-indicator div.active {
+  background-color: deeppink;
+}
+
+@keyframes slide-animation {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* happy coding!!!!!!! */
+/* this project made by Fahad at 23th April, 2022. */
