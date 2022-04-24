@@ -1,0 +1,51 @@
+/*  ====﷽==== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f8ff;
+}
+
+.slider-container {
+  width: 80%;
+  height: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.inner-slider {
+  width: 2100px;
+  display: flex;
+  gap: 10px;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card {
+  height: 350px;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 3rem;
+  color: aliceblue;
+  text-align: center;
+}
+
+.card:nth-child(odd) {
+  background-color: coral;
+}
+
+.card:nth-child(even) {
+  background-color: deeppink;
+}
+
+/* happy coding!!!! */
+/* this project made by Fahad at 23th April, 2022 . */
